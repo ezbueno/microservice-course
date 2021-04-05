@@ -20,7 +20,8 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
 
 	private static final String[] OPERATOR = { "/humanresources-worker/**" };
 
-	private static final String[] ADMIN = { "/humanresources-payroll/**", "/humanresources-user/**" };
+	private static final String[] ADMIN = { "/humanresources-payroll/**", "/humanresources-user/**", "/actuator/**",
+			"humanresources-worker/actuator/**", "humanresources-oauth/actuator/**" };
 
 	@Override
 	public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
