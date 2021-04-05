@@ -27,7 +27,7 @@ mvnw clean package
 
 docker build -t humanresources-config-server:v1 .
 
-docker run -p 8888:8888 --name humanresources-config-server --network humanresources-net -e GITHUB_USER=acenelio -e GITHUB_PASS= humanresources-config-server:v1
+docker run -p 8888:8888 --name humanresources-config-server --network humanresources-net -e GITHUB_USER=ezbueno -e GITHUB_PASS= humanresources-config-server:v1
 ```
 
 ## humanresources-eureka-server
